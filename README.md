@@ -22,7 +22,7 @@ Read the project's [contributing guide](./CONTRIBUTING.md) for more info.
 
 ## 🐛 Issues
 
-Go to the [project issues](https://github.com/warengonzaga/thirdweb-wp/issues), check if your issue . Please report any issues and bugs by [creating a new issue here](https://github.com/warengonzaga/thirdweb-wp/issues/new). Any help to improve the project would be appreciated. Thanks! 🙏✨
+Please report any issues and bugs by [creating a new issue here](https://github.com/warengonzaga/thirdweb-wp/issues/new), also make sure you're reporting an issue that doesn't exist. Any help to improve the project would be appreciated. Thanks! 🙏✨
 
 ## 🍀 Sponsors and Supporters
 
