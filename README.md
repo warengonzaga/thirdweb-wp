@@ -1,6 +1,8 @@
-# The thirdweb WP (Work In Progress) 🚧
+# thirdweb WP
 
-[![created by](https://img.shields.io/badge/created%20by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://github.com/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
+> **Warning**: This is currently work in progress...
+
+[![created by](https://img.shields.io/badge/by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://github.com/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
 
 ---
 
@@ -20,10 +22,11 @@ Please report any issues and bugs by [creating a new issue here](https://github.
 
 ## 🍀 Sponsor
 
-> Love what I do? Send me some [love](https://github.com/sponsors/warengonzaga) or [coffee](https://buymeacoff.ee/warengonzaga)!? 💖☕
->
-> Can't send love or coffees? 😥 Nominate me for a **[GitHub Star](https://stars.github.com/nominate)** instead!
-> Your support will help me to continue working on open-source projects like this. 🙏😇
+Love what I do? Send me some [love](https://github.com/sponsors/warengonzaga) or [coffee](https://buymeacoff.ee/warengonzaga)!? 💖☕
+
+Can't send love or coffees? 😥 Nominate me for a **[GitHub Star](https://stars.github.com/nominate)** instead!
+
+> **Note**: Your support means a lot to me as it allows me to dedicate my time and energy to create and maintain open-source projects that benefits the community. Thank you for supporting my mission to make technology better, accessible and inclusive for everyone. 🙏😇
 
 ## 📋 Code of Conduct
 
@@ -31,7 +34,7 @@ Read the project's [code of conduct](./code_of_conduct.md).
 
 ## 📃 License
 
-The thirdweb WP is licensed under [GNU General Public License v3](https://opensource.org/licenses/GPL-3.0).
+The thirdweb WP is licensed under [GNU General Public License v3.0](https://opensource.org/licenses/GPL-3.0).
 
 ## 📝 Author
 
