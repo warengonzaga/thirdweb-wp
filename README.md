@@ -2,7 +2,7 @@
 
 > **Warning**: This is currently work in progress...
 
-[![created by](https://img.shields.io/badge/by-Waren%20Gonzaga-blue.svg?longCache=true&style=flat-square)](https://github.com/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
+[![by](https://img.shields.io/badge/by-Waren%20Gonzaga-blue.svg?labelColor=181717&style=flat-square)](https://github.com/warengonzaga) [![sponsors](https://img.shields.io/badge/sponsor-%E2%9D%A4-%23db61a2.svg?&logo=github&logoColor=white&labelColor=181717&style=flat-square)](https://github.com/sponsors/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?logo=github&labelColor=181717&color=green&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&color=yellow&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
 
 ---
 
