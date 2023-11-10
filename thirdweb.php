@@ -37,16 +37,22 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
         array(
             'address' => get_option('global_contract_address', '0x26959366660AC1273C446bc884B3059fAeF5fD94'),
             'chain' => get_option('global_contract_chain', '84531'),
-            'function' => 'name',
+            'function' => 'tokenURI:0',
         ), $atts, $tag
     );
+
+    // Split function attribute into function name and arguments
+    $function_parts = explode(':', $twcontractread_atts['function']);
+    $function_name = $function_parts[0];
+    $function_args = isset($function_parts[1]) ? explode(',', $function_parts[1]) : array();
 
     // Call the REST API
     $engine_api_endpoint = get_option('engine_api_endpoint');
     if (empty($engine_api_endpoint)) {
         return '<span style="color:red;">Error: No engine API endpoint found. Please set the engine API endpoint in the plugin settings.</span>';
     }
-    $url = $engine_api_endpoint . '/contract/' . $twcontractread_atts['chain'] . '/' . $twcontractread_atts['address'] . '/read?functionName=' . $twcontractread_atts['function'];
+    // Build endpoint URL with function name and arguments
+    $url = $engine_api_endpoint . '/contract/' . $twcontractread_atts['chain'] . '/' . $twcontractread_atts['address'] . '/read?functionName=' . $function_name . '&args=' . implode(',', $function_args);
 
     $engine_access_token = get_option('engine_access_token');
     if (empty($engine_access_token)) {
@@ -57,7 +63,6 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
             'Authorization' => 'Bearer ' . $engine_access_token,
             'Content-Type' => 'application/json'
         )
-
     );
 
     $response = wp_remote_get( $url, $args );
@@ -70,7 +75,11 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
         if ( is_array( $response ) && ! is_wp_error( $response ) ) {
             $body = $response['body'];
             $data = json_decode( $body );
-            $result = '<span>' . esc_html( $data->result ) . '</span>';
+            if (isset($data->result)) {
+                $result = '<span>' . esc_html( $data->result ) . '</span>';
+            } else {
+                $result = '<span style="color:red;">Error: No result found in the response.</span>';
+            }
         }
 
     }
@@ -127,6 +136,7 @@ function thirdweb_wp_options() {
                     <td><input type="text" name="global_contract_chain" placeholder="84531" value="<?php echo esc_attr(get_option('global_contract_chain')); ?>"/></td>
                 </tr>
             </table>
+            
             <?php submit_button(); ?>
         </form>
     </div>
