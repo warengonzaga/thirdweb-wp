@@ -37,7 +37,7 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
         array(
             'address' => get_option('default_contract_address', '0x26959366660AC1273C446bc884B3059fAeF5fD94'),
             'chain' => get_option('default_chain', '84531'),
-            'function' => 'tokenURI:0',
+            'function' => 'name',
         ), $atts, $tag
     );
 
