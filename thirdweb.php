@@ -35,8 +35,8 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
     // override default attributes with user attributes
     $twcontractread_atts = shortcode_atts(
         array(
-            'address' => get_option('global_contract_address', '0x26959366660AC1273C446bc884B3059fAeF5fD94'),
-            'chain' => get_option('global_contract_chain', '84531'),
+            'address' => get_option('default_contract_address', '0x26959366660AC1273C446bc884B3059fAeF5fD94'),
+            'chain' => get_option('default_chain', '84531'),
             'function' => 'tokenURI:0',
         ), $atts, $tag
     );
@@ -103,8 +103,8 @@ function thirdweb_admin_menu() {
 function thirdweb_wp_settings() {
     register_setting('thirdweb-wp-settings-group', 'engine_api_endpoint');
     register_setting('thirdweb-wp-settings-group', 'engine_access_token');
-    register_setting('thirdweb-wp-settings-group', 'global_contract_address');
-    register_setting('thirdweb-wp-settings-group', 'global_contract_chain');
+    register_setting('thirdweb-wp-settings-group', 'default_contract_address');
+    register_setting('thirdweb-wp-settings-group', 'default_chain');
 }
 
 function thirdweb_wp_options() {
@@ -128,12 +128,12 @@ function thirdweb_wp_options() {
                     <td><input type="text" name="engine_access_token" placeholder="Your Access Token" value="<?php echo esc_attr(get_option('engine_access_token')); ?>"/></td>
                 </tr>
                 <tr valign="top">
-                    <th scope="row">Global Contract Address</th>
-                    <td><input type="text" name="global_contract_address" placeholder="0x26959366660AC1273C446bc884B3059fAeF5fD94" value="<?php echo esc_attr(get_option('global_contract_address')); ?>"/></td>
+                    <th scope="row">Default Contract Address</th>
+                    <td><input type="text" name="default_contract_address" placeholder="0x26959366660AC1273C446bc884B3059fAeF5fD94" value="<?php echo esc_attr(get_option('default_contract_address')); ?>"/></td>
                 </tr>
                 <tr valign="top">
-                    <th scope="row">Global Contract Chain</th>
-                    <td><input type="text" name="global_contract_chain" placeholder="84531" value="<?php echo esc_attr(get_option('global_contract_chain')); ?>"/></td>
+                    <th scope="row">Default Chain</th>
+                    <td><input type="text" name="default_chain" placeholder="84531" value="<?php echo esc_attr(get_option('default_chain')); ?>"/></td>
                 </tr>
             </table>
             
