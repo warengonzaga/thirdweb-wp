@@ -86,6 +86,8 @@ This project is licensed under [GNU General Public License v3.0](https://opensou
 
 This project is created by **[Waren Gonzaga](https://github.com/warengonzaga)**, with the help of awesome [contributors](https://github.com/warengonzaga/thirdweb-wp/graphs/contributors).
 
+[![contributors](https://contrib.rocks/image?repo=warengonzaga/thirdweb-wp)](https://github.com/warengonzaga/thirdweb-wp/graphs/contributors)
+
 ---
 
 💻 with ❤️ by [Waren Gonzaga](https://warengonzaga.com) and [Him](https://www.youtube.com/watch?v=HHrxS4diLew&t=44s) 🙏
