@@ -53,7 +53,7 @@ Reading contract address using `[twcontract]` shortcode.
 - `function` - The function name and arguments.
 
 > [!NOTE]
-> `functionName:arg1` for single argument or `functionName:arg1,arg2` for multiple arguments.
+> `functionName:arg1` for single argument or `functionName:arg1,arg2` for multiple arguments. If you saved your default contract address and chain, you can omit the `address` and `chain` attributes.
 
 _More features coming soon..._
 
