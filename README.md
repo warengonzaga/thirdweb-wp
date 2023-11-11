@@ -51,9 +51,9 @@ Reading contract address using `[twcontract]` shortcode.
 - `address` - The contract address.
 - `chain` - The chain name or ID.
 - `function` - The function name and arguments.
-  > [!NOTE]
-  > `functionName:arg1` for single argument.
-  > `functionName:arg1,arg2` for multiple arguments.
+
+> [!NOTE]
+> `functionName:arg1` for single argument or `functionName:arg1,arg2` for multiple arguments.
 
 _More features coming soon..._
 
