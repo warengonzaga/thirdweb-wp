@@ -27,7 +27,7 @@ Community contributed WordPress plugin for thirdweb features. Turn your WordPres
 == Usage ==
 Reading contract address using `[twcontract]` shortcode.
 
-```php
+```text
 [twcontract address="0x00..." chain="84531" function="tokenURI:0"]
 ```
 
