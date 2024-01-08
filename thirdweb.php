@@ -75,7 +75,7 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
     
     if (is_wp_error($response)) {
         $error_message = $response->get_error_message();
-        echo "<script>console.error('Error: $error_message');</script>";
+        echo "<script>console.error('Error: " . esc_js($error_message) . "');</script>";
     } else {
         if ( is_array( $response ) && ! is_wp_error( $response ) ) {
             $body = $response['body'];
