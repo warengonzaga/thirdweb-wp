@@ -4,10 +4,15 @@
 * Plugin URI: https://github.com/warengonzaga/thirdweb-wp
 * Description: A community WordPress plugin for thirdweb. Turn your WordPress website into Web3 instantly and easily with thirdweb.
 * Version: 0.0.1
-* Author: Waren Gonzaga
-* Author URI: https://warengonzaga.com
-* Text Domain: thirdweb-wp
-* Domain Path: /languages
+* Requires at least: 5.2
+* Requires PHP:      8.2
+* Author:            Waren Gonzaga
+* Author URI:        https://warengonzaga.com/
+* License:           GPL v3
+* License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+* Update URI:        thirdweb-wp
+* Text Domain:       thirdweb-wp
+* Domain Path:       /languages
 */
 
 /**
