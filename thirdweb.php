@@ -173,7 +173,7 @@ function thirdweb_wp_options() {
             <?php submit_button(); ?>
         </form>
         <hr/>
-        <p>Need help? <a href="https://portal.thirdweb.com/engine">Read the documentation</a>.</p>
+        <p>Need help? <a href="https://github.com/warengonzaga/thirdweb-wp?tab=readme-ov-file#%EF%B8%8F-usage">Read the documentation</a>.</p>
         <p>Found a bug? <a href="https://github.com/warengonzaga/thirdweb-wp">Let us know.</a></p>
         <p>Contribute to the plugin's development on <a href="https://github.com/warengonzaga/thirdweb-wp">GitHub repository</a>.</p>
     </div>
