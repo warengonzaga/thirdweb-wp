@@ -56,9 +56,22 @@ function thirdweb_contract_read( $atts = [], $content = null, $tag = '') {
     if (empty($engine_api_endpoint)) {
         return '<span style="color:red;">Error: No engine API endpoint found. Please set the engine API endpoint in the plugin settings.</span>';
     }
-    // Build endpoint URL with function name and arguments
-    $url = $engine_api_endpoint . '/contract/' . $twcontractread_atts['chain'] . '/' . $twcontractread_atts['address'] . '/read?functionName=' . $function_name . '&args=' . implode(',', $function_args);
 
+    // Build endpoint URL with function name and arguments
+    // Add trailing slash if not present
+    if (substr($engine_api_endpoint, -1) !== '/') {
+        $engine_api_endpoint .= '/';
+    }
+
+    // Build the URL
+    $url = $engine_api_endpoint . 'contract/' . $twcontractread_atts['chain'] . '/' . $twcontractread_atts['address'] . '/read?functionName=' . $function_name;
+
+    // Add function arguments to the URL if they exist
+    if (!empty($function_args)) {
+        $url .= '&args=' . implode(',', $function_args);
+    }
+
+    // Add access token to the request
     $engine_access_token = get_option('engine_access_token');
     if (empty($engine_access_token)) {
         return '<span style="color:red;">Error: No engine access token found. Please set the engine access token in the plugin settings.</span>';
@@ -118,7 +131,10 @@ function thirdweb_wp_options() {
     }
     ?>
     <div class="wrap">
-        <h2>thirdweb WP Settings</h2>
+        <h2 style="display: flex; align-items: center;font-weight: bold">
+            <img src="<?php echo plugins_url('assets/thirdweb.png', __FILE__); ?>" alt="thirdweb Logo" style="vertical-align: middle; margin-right: 10px; width: auto; height: 24px;">
+            thirdweb WP Settings<span style="font-size: 12px; margin-left: 10px; font-weight: normal">Community Edition</span>
+        </h2>
 
         <form method="post" action="options.php">
             <?php settings_fields('thirdweb-wp-settings-group'); ?>
@@ -126,24 +142,40 @@ function thirdweb_wp_options() {
             <table class="form-table">
                 <tr valign="top">
                     <th scope="row">Engine URL</th>
-                    <td><input type="text" name="engine_api_endpoint" placeholder="Your Engine URL" value="<?php echo esc_attr(get_option('engine_api_endpoint')); ?>"/></td>
+                    <td>
+                        <input type="text" name="engine_api_endpoint" placeholder="Your Engine URL" value="<?php echo esc_attr(get_option('engine_api_endpoint')); ?>"/>
+                        <p style="font-size: 10px; margin-top: 5px;"><i>Note: Please always double check your API URL.</i></p>
+                    </td>
                 </tr>
                 <tr valign="top">
                     <th scope="row">Access Token</th>
-                    <td><input type="text" name="engine_access_token" placeholder="Your Access Token" value="<?php echo esc_attr(get_option('engine_access_token')); ?>"/></td>
+                    <td>
+                        <input type="text" name="engine_access_token" placeholder="Your Access Token" value="<?php echo esc_attr(get_option('engine_access_token')); ?>"/>
+                        <p style="font-size: 10px; margin-top: 5px;"><i>Get your access token from your <a href="https://thirdweb.com/dashboard/engine">Engine dashboard</a>.</i></p>
+                    </td>
                 </tr>
                 <tr valign="top">
                     <th scope="row">Default Contract Address</th>
-                    <td><input type="text" name="default_contract_address" placeholder="0x26959366660AC1273C446bc884B3059fAeF5fD94" value="<?php echo esc_attr(get_option('default_contract_address')); ?>"/></td>
+                    <td>
+                        <input type="text" name="default_contract_address" placeholder="0x26959366660AC1273C446bc884B3059fAeF5fD94" value="<?php echo esc_attr(get_option('default_contract_address')); ?>"/>
+                        <p style="font-size: 10px; margin-top: 5px;"><i>Get your contract address from your <a href="https://thirdweb.com/dashboard/">dashboard</a>.</i></p>
+                </td>
                 </tr>
                 <tr valign="top">
                     <th scope="row">Default Chain</th>
-                    <td><input type="text" name="default_chain" placeholder="84531" value="<?php echo esc_attr(get_option('default_chain')); ?>"/></td>
+                    <td>
+                        <input type="text" name="default_chain" placeholder="84531" value="<?php echo esc_attr(get_option('default_chain')); ?>"/>
+                        <p style="font-size: 10px; margin-top: 5px;"><i>Get your chain ID or chain name from <a href="https://thirdweb.com/chainlist/">here</a>.</i></p>
+                    </td>
                 </tr>
             </table>
             
             <?php submit_button(); ?>
         </form>
+        <hr/>
+        <p>Need help? <a href="https://portal.thirdweb.com/engine">Read the documentation</a>.</p>
+        <p>Found a bug? <a href="https://github.com/warengonzaga/thirdweb-wp">Let us know.</a></p>
+        <p>Contribute to the plugin's development on <a href="https://github.com/warengonzaga/thirdweb-wp">GitHub repository</a>.</p>
     </div>
     <?php
 }
