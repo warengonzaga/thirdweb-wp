@@ -133,7 +133,7 @@ function thirdweb_wp_options() {
     <div class="wrap">
         <h2 style="display: flex; align-items: center;font-weight: bold">
             <img src="<?php echo plugins_url('assets/thirdweb.png', __FILE__); ?>" alt="thirdweb Logo" style="vertical-align: middle; margin-right: 10px; width: auto; height: 24px;">
-            thirdweb WP Settings<span style="font-size: 12px; margin-left: 10px; font-weight: normal">Community Edition</span>
+            thirdweb WP<span style="font-size: 12px; margin-left: 5px; font-weight: normal">Community Edition</span>
         </h2>
 
         <form method="post" action="options.php">
