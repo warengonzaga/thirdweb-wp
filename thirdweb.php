@@ -10,7 +10,6 @@
 * Author URI:        https://warengonzaga.com/
 * License:           GPL v3
 * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
-* Update URI:        thirdweb-wp
 * Text Domain:       thirdweb-wp
 * Domain Path:       /languages
 */
