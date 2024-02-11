@@ -5,7 +5,7 @@
 * Description: A community WordPress plugin for thirdweb. Turn your WordPress website into Web3 instantly and easily with thirdweb.
 * Version: 0.0.1
 * Requires at least: 5.2
-* Requires PHP:      8.2
+* Requires PHP:      8.1
 * Author:            Waren Gonzaga
 * Author URI:        https://warengonzaga.com/
 * License:           GPL v3
