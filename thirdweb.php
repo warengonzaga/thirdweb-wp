@@ -2,10 +2,10 @@
 /**
 * Plugin Name: thirdweb WP
 * Plugin URI: https://github.com/warengonzaga/thirdweb-wp
-* Description: A community WordPress plugin for thirdweb. Turn your WordPress website into Web3 instantly and easily with thirdweb.
-* Version: 0.0.1
+* Description: A community WordPress plugin for thirdweb. Turn your WordPress website into Web3 instantly and easily with thirdweb powered by thirdweb Engine.
+* Version: 0.0.2
 * Requires at least: 5.2
-* Requires PHP:      8.1
+* Requires PHP:      7.4
 * Author:            Waren Gonzaga
 * Author URI:        https://warengonzaga.com/
 * License:           GPL v3
@@ -22,9 +22,9 @@
 defined( 'ABSPATH' ) or die( 'Restricted Access!' );
 
 /**
- * The [twcontractread] shortcode.
+ * The [contract] shortcode.
  *
- * Read contract function
+ * Read smart contract function using shortcode.
  *
  * @param array  $atts    Shortcode attributes. Default empty.
  * @param string $content Shortcode content. Default null.
