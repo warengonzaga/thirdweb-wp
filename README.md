@@ -42,10 +42,10 @@ To be able to start using this plugin just [download the latest release here](ht
 
 ## 🕹️ Usage
 
-Reading contract address using `[twcontract]` shortcode.
+Reading contract address using `[contract]` shortcode.
 
 ```php
-[twcontract address="0x00..." chain="84531" function="tokenURI:0"]
+[contract address="0x00..." chain="84531" function="tokenURI:0"]
 ```
 
 - `address` - The contract address.

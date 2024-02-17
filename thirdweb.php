@@ -22,9 +22,9 @@
 defined( 'ABSPATH' ) or die( 'Restricted Access!' );
 
 /**
- * The [twcontractread] shortcode.
+ * The [contract] shortcode.
  *
- * Read contract function
+ * Read smart contract function using shortcode.
  *
  * @param array  $atts    Shortcode attributes. Default empty.
  * @param string $content Shortcode content. Default null.
