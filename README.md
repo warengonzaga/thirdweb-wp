@@ -1,10 +1,10 @@
-# thirdweb WP (WordPress Plugin)
+# thirdweb WP (WordPress Plugin) [![by](https://img.shields.io/badge/by-Waren%20Gonzaga-fe59ae.svg?longCache=true&labelColor=181717&style=flat-square)](https://warengonzaga.com)
 
-[![by](https://img.shields.io/badge/by-Waren%20Gonzaga-blue.svg?labelColor=181717&style=flat-square)](https://github.com/warengonzaga) [![sponsors](https://img.shields.io/badge/sponsor-%E2%9D%A4-%23db61a2.svg?&logo=github&logoColor=white&labelColor=181717&style=flat-square)](https://github.com/sponsors/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?logo=github&labelColor=181717&color=green&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&color=yellow&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
+[![maintainer](https://img.shields.io/badge/maintainer-Waren%20Gonzaga-016eea.svg?logo=github&labelColor=181717&longCache=true&style=flat-square)](https://warengonzaga.com) [![sponsors](https://img.shields.io/badge/sponsor-%E2%9D%A4-%23db61a2.svg?&logo=github&logoColor=white&labelColor=181717&style=flat-square)](https://github.com/sponsors/warengonzaga) [![release](https://img.shields.io/github/release/warengonzaga/thirdweb-wp.svg?logo=github&labelColor=181717&color=green&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/releases) [![star](https://img.shields.io/github/stars/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&color=yellow&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/stargazers) [![license](https://img.shields.io/github/license/warengonzaga/thirdweb-wp.svg?&logo=github&labelColor=181717&style=flat-square)](https://github.com/warengonzaga/thirdweb-wp/blob/main/license)
 
----
+[![banner](.github/assets/repo_banner.jpg)](https://wordpress.org/plugins/thirdweb-wp)
 
-A community WordPress plugin for **[thirdweb](https://thirdweb.com)**. Turn your WordPress website into Web3 instantly and easily with thirdweb. 💻🌏
+A community WordPress plugin for **[thirdweb](https://thirdweb.com)**. Turn your WordPress website into Web3 instantly and easily with thirdweb. Powered by thirdweb Engine. 🚀💻🧩
 
 Have suggestions in mind? [Let me know!](https://github.com/warengonzaga/thirdweb-wp/issues)
 
@@ -19,7 +19,7 @@ Have suggestions in mind? [Let me know!](https://github.com/warengonzaga/thirdwe
 - [thirdweb Engine URL](https://portal.thirdweb.com/engine/getting-started)
 - [thirdweb Engine Access Token](https://thirdweb.com/dashboard/engine)
 - WordPress 5.0+
-- PHP 8.1+
+- PHP 7.4+
 
 ## 📦 Installation
 

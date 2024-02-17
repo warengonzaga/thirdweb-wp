@@ -5,7 +5,7 @@ Tags: thirdweb, nft, web3, blokchain, crypto
 Requires at least: 2.8.0
 Tested up to: 6.4.0
 Requires PHP: 7.2
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
