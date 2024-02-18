@@ -4,7 +4,7 @@ Donate link: https://github.com/sponsors/warengonzaga
 Tags: thirdweb, nft, web3, blokchain, crypto, dapps, decentralization, decentralized, smart, contracts
 Requires at least: 2.8.0
 Tested up to: 6.4.0
-Requires PHP: 7.2
+Requires PHP: 7.4
 Stable tag: 0.0.2
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
@@ -24,9 +24,9 @@ A community WordPress plugin for [thirdweb](https://thirdweb.com). Turn your Wor
 *__Note__: You can also save your default or global address and chain across your wordpress site. Just go to __Settings > thirdweb WP__ and fill the __Default Contract Address__ and __Default Chain__ fields. Click __Save Changes__ to save your settings.*
 
 == Usage ==
-Reading contract address using `[twcontract]` shortcode.
+Reading contract address using `[contract]` shortcode.
 
-`[twcontract address="0x00..." chain="84531" function="tokenURI:0"]`
+`[contract address="0x00..." chain="84531" function="tokenURI:0"]`
 
 *Shortcode Attributes*
 - _address_ - The contract address.
